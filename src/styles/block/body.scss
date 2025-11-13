@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: $font-family;
+  box-sizing: border-box;
+  width: 1044px;
+  height: 1024px;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:hover {
+  transition:
+    transform 300ms,
+    color 300ms,
+    background-color 300ms;
+}
