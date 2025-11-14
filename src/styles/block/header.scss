@@ -3,8 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
-  background: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  background-color: $background-color-header;
+  box-shadow: 0 2px 4px $box-shadow-color-header;
 
   &__logo-image {
     display: block;
@@ -23,7 +23,7 @@
 .nav__item {
   margin-left: 20px;
 
-  &__:first-child {
+  &:first-child {
     margin-left: 0;
   }
 }
@@ -39,6 +39,9 @@
   text-decoration: none;
   text-transform: uppercase;
   white-space: nowrap;
+  transition:
+    transform 300ms,
+    color 300ms;
 
   &.is-active {
     color: $accent;

@@ -8,7 +8,11 @@
   padding: 1px;
   border: 1px solid rgba(243, 243, 243, 1);
   border-radius: 5px;
-  background-color: rgba(255, 255, 255, 1);
+  background-color: $background-color-card;
+  transition:
+    transform 300ms,
+    color 300ms,
+    background-color 300ms;
 
   &__image {
     width: $card-width * 0.8;
