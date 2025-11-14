@@ -3,15 +3,15 @@
   width: $card-width * 0.48;
 
   &__star {
-    height: 16px;
-    width: 16px;
+    height: $star-size;
+    width: $star-size;
     background-image: url(../images/star.svg);
     background-position: center;
     background-size: cover;
   }
 
   &__star:not(:last-child) {
-    margin-right: 4px;
+    margin-right: $star-margin-right;
   }
 
   @for $i from 1 through 5 {

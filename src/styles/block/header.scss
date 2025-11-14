@@ -2,14 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 50px;
-  background-color: $background-color-header;
-  box-shadow: 0 2px 4px $box-shadow-color-header;
+  padding: 0 $header-padding-horizontal;
+  background-color: $background-header-color;
+  box-shadow: 0 2px 4px $header-box-shadow-color;
 
   &__logo-image {
     display: block;
-    height: 40px;
-    width: 40px;
+    height: $logo-size;
+    width: $logo-size;
   }
 }
 
@@ -22,7 +22,7 @@
   }
 
   &__item {
-    margin-left: 20px;
+    margin-left: $nav-item-margin-left;
 
     &:first-child {
       margin-left: 0;
@@ -34,13 +34,13 @@
     display: flex;
     box-sizing: border-box;
     align-items: center;
-    height: 60px;
-    font-size: 12px;
+    height: $nav-height;
+    font-size: $font-size;
     color: $color-nav-link;
     text-decoration: none;
     text-transform: uppercase;
     white-space: nowrap;
-    transition: color 300ms;
+    transition: color $transition-duration;
 
     &.is-active {
       color: $accent;
@@ -49,10 +49,10 @@
     &.is-active::after {
       content: '';
       position: absolute;
-      height: 4px;
+      height: $nav-is-active-height;
       width: 100%;
       background-color: $accent;
-      border-radius: 8px;
+      border-radius: $nav-is-active-border-radius;
       display: block;
       bottom: 0;
       left: 0;
